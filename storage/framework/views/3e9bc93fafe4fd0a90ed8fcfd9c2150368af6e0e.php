@@ -40,19 +40,12 @@
 </head>
 
 <body>
-    <!-- ======= Sidenav ======= -->
-    <?php echo $__env->make('partials.sidebar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-
     <!-- Main content -->
     <div class="main-content" id="panel">
-        <!-- ======= Sidenav ======= -->
-        <?php echo $__env->make('partials.topNav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-
-        <!-- ======= Page Title ======= -->
-        <?php echo $__env->yieldContent('pageTitle'); ?>
+        <?php echo $__env->make('partials.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
         <!-- Page content -->
-        <div class="container-fluid mt--6">
+        <div class="container-fluid mt-7">
 
             <?php echo $__env->yieldContent('container'); ?>
 

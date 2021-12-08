@@ -40,19 +40,12 @@
 </head>
 
 <body>
-    <!-- ======= Sidenav ======= -->
-    @include('partials.sidebar')
-
     <!-- Main content -->
     <div class="main-content" id="panel">
-        <!-- ======= Sidenav ======= -->
-        @include('partials.topNav')
-
-        <!-- ======= Page Title ======= -->
-        @yield('pageTitle')
+        @include('partials.navbar')
 
         <!-- Page content -->
-        <div class="container-fluid mt--6">
+        <div class="container-fluid mt-7">
 
             @yield('container')
 

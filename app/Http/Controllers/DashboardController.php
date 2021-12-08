@@ -20,4 +20,11 @@ class DashboardController extends Controller
             "title" => "List UKM"
         ]);
     }
+
+    public function abouts()
+    {
+        return view('list-ukm', [
+            "title" => "Tentang Kami"
+        ]);
+    }
 }

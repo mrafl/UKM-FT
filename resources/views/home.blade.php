@@ -2,7 +2,7 @@
 @section('container')
     <!-- Header -->
     <div class="header pt-5 pb-7 mt-5" style="background-image: url('{{ template('assets/img/bg.png') }}') !important;">
-        <div class="  container">
+        <div class="container">
             <div class="header-body">
                 <div class="row align-items-center">
                     <div class="col-lg-7">
@@ -52,7 +52,7 @@
             </svg>
         </div>
     </div>
-    <section class="py-6 pb-9 bg-default" id="details">
+    <section class="py-6 pb-9 pt-5 bg-default" id="details">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
