@@ -13,17 +13,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <!-- Icons -->
     <link rel="stylesheet" href="<?php echo e(template('assets/vendor/nucleo/css/nucleo.css')); ?>" type="text/css">
-    <link rel="stylesheet" href="<?php echo e(template('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css')); ?>"
-        type="text/css">
+    <link rel="stylesheet"
+          href="<?php echo e(template('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css')); ?>"
+          type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
     <!-- Page plugins -->
     <link rel="stylesheet"
-        href="<?php echo e(template('assets/vendor/datatables.net-bs4/css/dataTables.bootstrap4.min.css')); ?>">
+          href="<?php echo e(template('assets/vendor/datatables.net-bs4/css/dataTables.bootstrap4.min.css')); ?>">
     <link rel="stylesheet"
-        href="<?php echo e(template('assets/vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css')); ?>">
+          href="<?php echo e(template('assets/vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css')); ?>">
     <link rel="stylesheet"
-        href="<?php echo e(template('assets/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css')); ?>">
+          href="<?php echo e(template('assets/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(template('assets/vendor/animate.css/animate.min.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(template('assets/vendor/sweetalert2/dist/sweetalert2.min.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(template('assets/vendor/select2/dist/css/select2.min.css')); ?>">
@@ -40,20 +41,20 @@
 </head>
 
 <body>
-    <!-- Main content -->
-    <div class="main-content" id="panel">
-        <?php echo $__env->make('partials.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<!-- Main content -->
+<div class="main-content" id="panel">
+    <?php echo $__env->make('partials.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
-        <!-- Page content -->
-        <div class="container-fluid mt-7">
+    <!-- Page content -->
+    <div class="container-fluid mt-7">
 
-            <?php echo $__env->yieldContent('container'); ?>
+        <?php echo $__env->yieldContent('container'); ?>
 
-            <!-- ======= Footer ======= -->
-            <?php echo $__env->make('partials.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-            <?php echo $__env->make('partials.js', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-        </div>
+        <!-- ======= Footer ======= -->
+        <?php echo $__env->make('partials.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        <?php echo $__env->make('partials.js', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     </div>
+</div>
 
 </body>
 

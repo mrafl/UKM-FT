@@ -14,7 +14,7 @@
     <!-- Icons -->
     <link rel="stylesheet" href="{{ template('assets/vendor/nucleo/css/nucleo.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ template('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}"
-        type="text/css">
+          type="text/css">
     <!-- Page plugins -->
     <!-- Argon CSS -->
     <link rel="stylesheet" href="{{ template('assets/css/argon.css?v=1.1.0') }}" type="text/css">
@@ -23,17 +23,17 @@
 </head>
 
 <body>
-    <!-- Main content -->
-    <div class="main-content" id="panel">
-        @include('partials.navbar')
+<!-- Main content -->
+<div class="main-content" id="panel">
+@include('partials.navbar')
 
-        @yield('container')
+@yield('container')
 
-        <!-- ======= Footer ======= -->
-        @include('partials.footer')
+<!-- ======= Footer ======= -->
+    @include('partials.footer')
 
-        @include('partials.js')
-    </div>
+    @include('partials.js')
+</div>
 </body>
 
 </html>

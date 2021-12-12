@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UKMController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UKMController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------

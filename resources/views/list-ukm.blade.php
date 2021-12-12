@@ -17,7 +17,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/opmawa/Logo BEM FT.png') }}">
+                                             src="{{ template('assets/img/opmawa/Logo BEM FT.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -42,7 +42,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/opmawa/Logo BPM FT.png') }}">
+                                             src="{{ template('assets/img/opmawa/Logo BPM FT.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -67,7 +67,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/opmawa/Logo BEMP Rekayasa Keselamatan Kebakaran.png') }}">
+                                             src="{{ template('assets/img/opmawa/Logo BEMP Rekayasa Keselamatan Kebakaran.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -92,7 +92,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/opmawa/logo bemptm.png') }}">
+                                             src="{{ template('assets/img/opmawa/logo bemptm.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -117,7 +117,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/opmawa/LOGO BEMP PTIK.png') }}">
+                                             src="{{ template('assets/img/opmawa/LOGO BEMP PTIK.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -142,7 +142,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/opmawa/Logo Hima Sipil.jpg') }}">
+                                             src="{{ template('assets/img/opmawa/Logo Hima Sipil.jpg') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -167,7 +167,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/opmawa/Logo BEMP TRANSPORTASI.png') }}">
+                                             src="{{ template('assets/img/opmawa/Logo BEMP TRANSPORTASI.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -216,7 +216,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/opmawa/Logo BEM P Elka.png') }}">
+                                             src="{{ template('assets/img/opmawa/Logo BEM P Elka.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -241,7 +241,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/opmawa/Logo BEM P Rias.png') }}">
+                                             src="{{ template('assets/img/opmawa/Logo BEM P Rias.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -266,7 +266,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/opmawa/Logo BEM P Busana.png') }}">
+                                             src="{{ template('assets/img/opmawa/Logo BEM P Busana.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -291,7 +291,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/opmawa/Logo BEM P Boga.png') }}">
+                                             src="{{ template('assets/img/opmawa/Logo BEM P Boga.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -316,7 +316,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/opmawa/Logo BEM P PKK.png') }}">
+                                             src="{{ template('assets/img/opmawa/Logo BEM P PKK.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -347,7 +347,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/east-beauty.jpg') }}">
+                                             src="{{ template('assets/img/ormawa/east-beauty.jpg') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -372,7 +372,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/Logo C3.png') }}">
+                                             src="{{ template('assets/img/ormawa/Logo C3.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -397,7 +397,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/trasnsport-club.jpg') }}">
+                                             src="{{ template('assets/img/ormawa/trasnsport-club.jpg') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -422,7 +422,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/animatografi.jpg') }}">
+                                             src="{{ template('assets/img/ormawa/animatografi.jpg') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -447,7 +447,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/Robotic.jpg') }}">
+                                             src="{{ template('assets/img/ormawa/Robotic.jpg') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -472,7 +472,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/logo batavia.png') }}">
+                                             src="{{ template('assets/img/ormawa/logo batavia.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -497,7 +497,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/LOGO HCC - Hospitality Competition Club.png') }}">
+                                             src="{{ template('assets/img/ormawa/LOGO HCC - Hospitality Competition Club.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -522,7 +522,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/Food Competition Team.jpg') }}">
+                                             src="{{ template('assets/img/ormawa/Food Competition Team.jpg') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -547,7 +547,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/comdev.jpg') }}">
+                                             src="{{ template('assets/img/ormawa/comdev.jpg') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -572,7 +572,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/logo kmhbunj.png') }}">
+                                             src="{{ template('assets/img/ormawa/logo kmhbunj.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -597,7 +597,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/Logo BEM P Busana.png') }}">
+                                             src="{{ template('assets/img/ormawa/Logo BEM P Busana.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -622,7 +622,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/Logo BEM P Boga.png') }}">
+                                             src="{{ template('assets/img/ormawa/Logo BEM P Boga.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -647,7 +647,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/Logo BEM P PKK.png') }}">
+                                             src="{{ template('assets/img/ormawa/Logo BEM P PKK.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -672,7 +672,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/Logo BEM P PKK.png') }}">
+                                             src="{{ template('assets/img/ormawa/Logo BEM P PKK.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -697,7 +697,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/Logo BEM P PKK.png') }}">
+                                             src="{{ template('assets/img/ormawa/Logo BEM P PKK.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -722,7 +722,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/Logo BEM P PKK.png') }}">
+                                             src="{{ template('assets/img/ormawa/Logo BEM P PKK.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -747,7 +747,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/Logo BEM P PKK.png') }}">
+                                             src="{{ template('assets/img/ormawa/Logo BEM P PKK.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">
@@ -772,7 +772,7 @@
                                 <div class="col-auto">
                                     <a href="#" class="avatar avatar-xl rounded-circle bg-transparent">
                                         <img alt="Image placeholder"
-                                            src="{{ template('assets/img/ormawa/Logo BEM P PKK.png') }}">
+                                             src="{{ template('assets/img/ormawa/Logo BEM P PKK.png') }}">
                                     </a>
                                 </div>
                                 <div class="col ml--2">

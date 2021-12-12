@@ -14,7 +14,7 @@
     <!-- Icons -->
     <link rel="stylesheet" href="{{ template('assets/vendor/nucleo/css/nucleo.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ template('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}"
-        type="text/css">
+          type="text/css">
     <!-- Page plugins -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <!-- Argon CSS -->
@@ -24,27 +24,27 @@
 </head>
 
 <body>
+<!-- ======= Sidenav ======= -->
+@include('partials.sidebar')
+
+<!-- Main content -->
+<div class="main-content" id="panel">
     <!-- ======= Sidenav ======= -->
-    @include('partials.sidebar')
+@include('partials.topNav')
 
-    <!-- Main content -->
-    <div class="main-content" id="panel">
-        <!-- ======= Sidenav ======= -->
-        @include('partials.topNav')
+<!-- ======= Page Title ======= -->
+@yield('pageTitle')
 
-        <!-- ======= Page Title ======= -->
-        @yield('pageTitle')
+<!-- Page content -->
+    <div class="container-fluid mt--6">
 
-        <!-- Page content -->
-        <div class="container-fluid mt--6">
+    @yield('container')
 
-            @yield('container')
-
-            <!-- ======= Footer ======= -->
-            @include('partials.footer')
-            @include('partials.js')
-        </div>
+    <!-- ======= Footer ======= -->
+        @include('partials.footer')
+        @include('partials.js')
     </div>
+</div>
 
 </body>
 

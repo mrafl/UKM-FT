@@ -14,16 +14,16 @@
     <!-- Icons -->
     <link rel="stylesheet" href="{{ template('assets/vendor/nucleo/css/nucleo.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ template('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}"
-        type="text/css">
+          type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
     <!-- Page plugins -->
     <link rel="stylesheet"
-        href="{{ template('assets/vendor/datatables.net-bs4/css/dataTables.bootstrap4.min.css') }}">
+          href="{{ template('assets/vendor/datatables.net-bs4/css/dataTables.bootstrap4.min.css') }}">
     <link rel="stylesheet"
-        href="{{ template('assets/vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css') }}">
+          href="{{ template('assets/vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css') }}">
     <link rel="stylesheet"
-        href="{{ template('assets/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css') }}">
+          href="{{ template('assets/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css') }}">
     <link rel="stylesheet" href="{{ template('assets/vendor/animate.css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ template('assets/vendor/sweetalert2/dist/sweetalert2.min.css') }}">
     <link rel="stylesheet" href="{{ template('assets/vendor/select2/dist/css/select2.min.css') }}">
@@ -40,20 +40,20 @@
 </head>
 
 <body>
-    <!-- Main content -->
-    <div class="main-content" id="panel">
-        @include('partials.navbar')
+<!-- Main content -->
+<div class="main-content" id="panel">
+@include('partials.navbar')
 
-        <!-- Page content -->
-        <div class="container-fluid mt-7">
+<!-- Page content -->
+    <div class="container-fluid mt-7">
 
-            @yield('container')
+    @yield('container')
 
-            <!-- ======= Footer ======= -->
-            @include('partials.footer')
-            @include('partials.js')
-        </div>
+    <!-- ======= Footer ======= -->
+        @include('partials.footer')
+        @include('partials.js')
     </div>
+</div>
 
 </body>
 

@@ -14,7 +14,8 @@
 <script src="<?php echo e(template('assets/vendor/jvectormap-next/jquery-jvectormap.min.js')); ?>"></script>
 <script src="<?php echo e(template('assets/js/vendor/jvectormap/jquery-jvectormap-world-mill.js')); ?>"></script>
 <script src="<?php echo e(template('assets/vendor/select2/dist/js/select2.min.js')); ?>"></script>
-<script src="<?php echo e(template('assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js')); ?>"></script>
+<script
+    src="<?php echo e(template('assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js')); ?>"></script>
 <script src="<?php echo e(template('assets/vendor/nouislider/distribute/nouislider.min.js')); ?>"></script>
 <script src="<?php echo e(template('assets/vendor/quill/dist/quill.min.js')); ?>"></script>
 <script src="<?php echo e(template('assets/vendor/dropzone/dist/min/dropzone.min.js')); ?>"></script>
@@ -24,7 +25,8 @@
 <script src="<?php echo e(template('assets/vendor/datatables.net/js/jquery.dataTables.min.js')); ?>"></script>
 <script src="<?php echo e(template('assets/vendor/datatables.net-bs4/js/dataTables.bootstrap4.min.js')); ?>"></script>
 <script src="<?php echo e(template('assets/vendor/datatables.net-buttons/js/dataTables.buttons.min.js')); ?>"></script>
-<script src="<?php echo e(template('assets/vendor/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js')); ?>"></script>
+<script
+    src="<?php echo e(template('assets/vendor/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js')); ?>"></script>
 <script src="<?php echo e(template('assets/vendor/datatables.net-buttons/js/buttons.html5.min.js')); ?>"></script>
 <script src="<?php echo e(template('assets/vendor/datatables.net-buttons/js/buttons.flash.min.js')); ?>"></script>
 <script src="<?php echo e(template('assets/vendor/datatables.net-buttons/js/buttons.print.min.js')); ?>"></script>

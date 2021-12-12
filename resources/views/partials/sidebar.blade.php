@@ -20,8 +20,8 @@
         <div class="navbar-inner">
             <!-- Collapse -->
             <div class="collapse navbar-collapse" id="sidenav-collapse-main">
-                @if ($title === 'Akademik')
-                    <!-- Nav items -->
+            @if ($title === 'Akademik')
+                <!-- Nav items -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('index') }}">
@@ -31,9 +31,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ $subTitle === 'Mahasiswa' ? 'active' : '' }}" href="#mahasiswa"
-                                data-toggle="collapse" role="button"
-                                aria-expanded="{{ $subTitle === 'Mahasiswa' ? 'true' : '' }}"
-                                aria-controls="mahasiswa">
+                               data-toggle="collapse" role="button"
+                               aria-expanded="{{ $subTitle === 'Mahasiswa' ? 'true' : '' }}"
+                               aria-controls="mahasiswa">
                                 <i class="fas fa-user-graduate text-red"></i>
                                 <span class="nav-link-text">Mahasiswa</span>
                             </a>
@@ -41,12 +41,12 @@
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
                                         <a href="{{ $subTitle2 === 'Mahasiswa Aktif' ? '#' : route('mahasiswaAktif') }}"
-                                            class="nav-link {{ $subTitle2 === 'Mahasiswa Aktif' ? 'active' : '' }}">
+                                           class="nav-link {{ $subTitle2 === 'Mahasiswa Aktif' ? 'active' : '' }}">
                                             Mahasiswa Aktif</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="{{ $subTitle2 === 'Sebaran Mahasiswa' ? '#' : route('sebaranMahasiswa') }}"
-                                            class="nav-link {{ $subTitle2 === 'Sebaran Mahasiswa' ? 'active' : '' }}">
+                                           class="nav-link {{ $subTitle2 === 'Sebaran Mahasiswa' ? 'active' : '' }}">
                                             Sebaran Mahasiswa</a>
                                     </li>
                                 </ul>
@@ -107,28 +107,28 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ $subTitle === 'Kualifikasi' ? 'active' : '' }}"
-                                href="{{ $subTitle === 'Kualifikasi' ? '#' : route('SDM', ['slug' => 'kualifikasi']) }}">
+                               href="{{ $subTitle === 'Kualifikasi' ? '#' : route('SDM', ['slug' => 'kualifikasi']) }}">
                                 <i class="fas fa-users text-red"></i>
                                 <span class="nav-link-text">Kualifikasi</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ $subTitle === 'Golongan' ? 'active' : '' }}"
-                                href="{{ $subTitle === 'Golongan' ? '#' : route('SDM', ['slug' => 'golongan']) }}">
+                               href="{{ $subTitle === 'Golongan' ? '#' : route('SDM', ['slug' => 'golongan']) }}">
                                 <i class="fas fa-id-card-alt text-blue"></i>
                                 <span class="nav-link-text">Golongan</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ $subTitle === 'Jabatan Fungsional' ? 'active' : '' }}"
-                                href="{{ $subTitle === 'Jabatan Fungsional' ? '#' : route('SDM', ['slug' => 'jabatanFungsional']) }}">
+                               href="{{ $subTitle === 'Jabatan Fungsional' ? '#' : route('SDM', ['slug' => 'jabatanFungsional']) }}">
                                 <i class="fas fa-briefcase text-orange"></i>
                                 <span class="nav-link-text">Jabatan Fungsional</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ $subTitle === 'Usia' ? 'active' : '' }}"
-                                href="{{ $subTitle === 'Usia' ? '#' : route('SDM', ['slug' => 'usia']) }}">
+                               href="{{ $subTitle === 'Usia' ? '#' : route('SDM', ['slug' => 'usia']) }}">
                                 <i class="fas fa-calendar-day text-info"></i>
                                 <span class="nav-link-text">Usia</span>
                             </a>
@@ -148,7 +148,7 @@
                         @if (session('role') == 'rektor')
                             <li class="nav-item">
                                 <a class="nav-link {{ $subTitle2 === 'Universitas' ? 'active' : '' }}"
-                                    href="{{ route('akreditasiUniversitas') }}">
+                                   href="{{ route('akreditasiUniversitas') }}">
                                     <i class="fas fa-school text-red"></i>
                                     <span class="nav-link-text">Universitas</span>
                                 </a>
@@ -156,7 +156,7 @@
                         @endif
                         <li class="nav-item">
                             <a class="nav-link {{ $subTitle2 === 'Fakultas' ? 'active' : '' }}"
-                                href="{{ route('akreditasiFakultas') }}">
+                               href="{{ route('akreditasiFakultas') }}">
                                 <i class="fas fa-university text-blue"></i>
                                 <span class="nav-link-text">Fakultas</span>
                             </a>
@@ -164,9 +164,9 @@
                         @if (session('role') == 'rektor')
                             <li class="nav-item">
                                 <a class="nav-link {{ $subTitle === 'Akreditasi' ? 'active' : '' }}"
-                                    href="#akreditasi" data-toggle="collapse" role="button"
-                                    aria-expanded="{{ $subTitle === 'Akreditasi' ? 'true' : '' }}"
-                                    aria-controls="mahasiswa">
+                                   href="#akreditasi" data-toggle="collapse" role="button"
+                                   aria-expanded="{{ $subTitle === 'Akreditasi' ? 'true' : '' }}"
+                                   aria-controls="mahasiswa">
                                     <i class="fas fa-award text-orange"></i>
                                     <span class="nav-link-text">Akreditasi</span>
                                 </a>
@@ -174,42 +174,42 @@
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
                                             <a href="{{ $subTitle2 === 'Rekap Akreditasi' ? '#' : route('rekapAkreditasi') }}"
-                                                class="nav-link {{ $subTitle2 === 'Rekap Akreditasi' ? 'active' : '' }}">
+                                               class="nav-link {{ $subTitle2 === 'Rekap Akreditasi' ? 'active' : '' }}">
                                                 Rekap Akreditasi</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="{{ $subTitle2 === 'Akreditasi A' ? '#' : route('akreditasiA') }}"
-                                                class="nav-link {{ $subTitle2 === 'Akreditasi A' ? 'active' : '' }}">
+                                               class="nav-link {{ $subTitle2 === 'Akreditasi A' ? 'active' : '' }}">
                                                 Akreditasi A</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="{{ $subTitle2 === 'Akreditasi B' ? '#' : route('akreditasiB') }}"
-                                                class="nav-link {{ $subTitle2 === 'Akreditasi B' ? 'active' : '' }}">
+                                               class="nav-link {{ $subTitle2 === 'Akreditasi B' ? 'active' : '' }}">
                                                 Akreditasi B</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="{{ $subTitle2 === 'Akreditasi C' ? '#' : route('akreditasiC') }}"
-                                                class="nav-link {{ $subTitle2 === 'Akreditasi C' ? 'active' : '' }}">
+                                               class="nav-link {{ $subTitle2 === 'Akreditasi C' ? 'active' : '' }}">
                                                 Akreditasi C</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="{{ $subTitle2 === 'Akreditasi Unggul' ? '#' : route('akreditasiUnggul') }}"
-                                                class="nav-link {{ $subTitle2 === 'Akreditasi Unggul' ? 'active' : '' }}">
+                                               class="nav-link {{ $subTitle2 === 'Akreditasi Unggul' ? 'active' : '' }}">
                                                 Akreditasi Unggul</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="{{ $subTitle2 === 'Akreditasi Baik Sekali' ? '#' : route('akreditasiBaikSekali') }}"
-                                                class="nav-link {{ $subTitle2 === 'Akreditasi Baik Sekali' ? 'active' : '' }}">
+                                               class="nav-link {{ $subTitle2 === 'Akreditasi Baik Sekali' ? 'active' : '' }}">
                                                 Akreditasi Baik Sekali</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="{{ $subTitle2 === 'Akreditasi Baik' ? '#' : route('akreditasiBaik') }}"
-                                                class="nav-link {{ $subTitle2 === 'Akreditasi Baik' ? 'active' : '' }}">
+                                               class="nav-link {{ $subTitle2 === 'Akreditasi Baik' ? 'active' : '' }}">
                                                 Akreditasi Baik</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="{{ $subTitle2 === 'Belum Terakreditasi' ? '#' : route('akreditasiNo') }}"
-                                                class="nav-link {{ $subTitle2 === 'Belum Terakreditasi' ? 'active' : '' }}">
+                                               class="nav-link {{ $subTitle2 === 'Belum Terakreditasi' ? 'active' : '' }}">
                                                 Belum Terakreditasi</a>
                                         </li>
                                     </ul>
@@ -217,38 +217,38 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{ $subTitle === 'Masa Berlaku' ? 'active' : '' }}"
-                                    href="#masaBerlaku" data-toggle="collapse" role="button"
-                                    aria-expanded="{{ $subTitle === 'Masa Berlaku' ? 'true' : '' }}"
-                                    aria-controls="masaBerlaku">
+                                   href="#masaBerlaku" data-toggle="collapse" role="button"
+                                   aria-expanded="{{ $subTitle === 'Masa Berlaku' ? 'true' : '' }}"
+                                   aria-controls="masaBerlaku">
                                     <i class="fas fa-calendar-alt text-purple"></i>
                                     <span class="nav-link-text">Masa Berlaku</span>
                                 </a>
                                 <div class="collapse {{ $subTitle === 'Masa Berlaku' ? 'show' : '' }}"
-                                    id="masaBerlaku">
+                                     id="masaBerlaku">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
                                             <a href="{{ $subTitle2 === 'Rekap Masa Berlaku' ? '#' : route('rekapMasaBerlaku') }}"
-                                                class="nav-link {{ $subTitle2 === 'Rekap Masa Berlaku' ? 'active' : '' }}">
+                                               class="nav-link {{ $subTitle2 === 'Rekap Masa Berlaku' ? 'active' : '' }}">
                                                 Rekap Masa Berlaku</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="{{ $subTitle2 === 'Lebih dari 60 Hari' ? '#' : route('lebihDari60Hari') }}"
-                                                class="nav-link {{ $subTitle2 === 'Lebih dari 60 Hari' ? 'active' : '' }}">
+                                               class="nav-link {{ $subTitle2 === 'Lebih dari 60 Hari' ? 'active' : '' }}">
                                                 Lebih dari 60 Hari</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="{{ $subTitle2 === '30 - 60 Hari' ? '#' : route('30Sampai60Hari') }}"
-                                                class="nav-link {{ $subTitle2 === '30 - 60 Hari' ? 'active' : '' }}">
+                                               class="nav-link {{ $subTitle2 === '30 - 60 Hari' ? 'active' : '' }}">
                                                 30 - 60 Hari</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="{{ $subTitle2 === 'Kurang dari 30 Hari' ? '#' : route('kurangDari30Hari') }}"
-                                                class="nav-link {{ $subTitle2 === 'Kurang dari 30 Hari' ? 'active' : '' }}">
+                                               class="nav-link {{ $subTitle2 === 'Kurang dari 30 Hari' ? 'active' : '' }}">
                                                 Kurang dari 30 Hari</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="{{ $subTitle2 === 'Habis' ? '#' : route('masaBerlakuHabis') }}"
-                                                class="nav-link {{ $subTitle2 === 'Habis' ? 'active' : '' }}">
+                                               class="nav-link {{ $subTitle2 === 'Habis' ? 'active' : '' }}">
                                                 Masa Berlaku Habis</a>
                                         </li>
                                     </ul>

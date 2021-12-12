@@ -1,13 +1,13 @@
 <!-- Navabar -->
 <nav id="navbar-main" class="navbar navbar-horizontal navbar-main navbar-expand-lg navbar-dark fixed-top"
-    style="background: #9850C3;">
+     style="background: #9850C3;">
     <div class="container">
         <a class="navbar-brand" href="{{ route('index') }}">
             <img src="{{ template('assets/img/unj.png') }}">
         </a>
         <a href="{{ route('index') }}" class="navbar-brand">UKM - Fakultas Teknik</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"
-            aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse navbar-custom-collapse collapse" id="navbar-collapse">
@@ -20,8 +20,8 @@
                     </div>
                     <div class="col-6 collapse-close">
                         <button type="button" class="navbar-toggler" data-toggle="collapse"
-                            data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false"
-                            aria-label="Toggle navigation">
+                                data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false"
+                                aria-label="Toggle navigation">
                             <span></span>
                             <span></span>
                         </button>
@@ -50,7 +50,7 @@
                     </a>
                 </li>
             </ul>
-            <hr class="d-lg-none" />
+            <hr class="d-lg-none"/>
             </ul>
         </div>
     </div>
