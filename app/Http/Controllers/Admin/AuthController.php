@@ -21,4 +21,11 @@ class AuthController extends Controller
         session()->put("token", $result["data"]["token"]["token"]);
         return redirect()->route("admin.index");
     }
+
+    public function logout()
+    {
+        Services::logout();
+        session()->flush();
+        return redirect()->route("login");
+    }
 }

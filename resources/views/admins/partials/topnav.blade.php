@@ -7,10 +7,10 @@
                        role="button">
                         <div class="media align-items-center">
                           <span class="avatar avatar-sm rounded-circle">
-                            <img alt="Image placeholder" src="{{ argon("assets/img/theme/team-4.jpg") }}">
+                            <img alt="Image placeholder" src="{{ attachments($user['photo']) }}">
                           </span>
                             <div class="media-body ml-2 d-none d-lg-block">
-                                <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
+                                <span class="mb-0 text-sm  font-weight-bold">{{ $user['name'] }}</span>
                             </div>
                         </div>
                     </a>
@@ -18,24 +18,7 @@
                         <div class="dropdown-header noti-title">
                             <h6 class="text-overflow m-0">Welcome!</h6>
                         </div>
-                        <a class="dropdown-item" href="#!">
-                            <i class="ni ni-single-02"></i>
-                            <span>My profile</span>
-                        </a>
-                        <a class="dropdown-item" href="#!">
-                            <i class="ni ni-settings-gear-65"></i>
-                            <span>Settings</span>
-                        </a>
-                        <a class="dropdown-item" href="#!">
-                            <i class="ni ni-calendar-grid-58"></i>
-                            <span>Activity</span>
-                        </a>
-                        <a class="dropdown-item" href="#!">
-                            <i class="ni ni-support-16"></i>
-                            <span>Support</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#!">
+                        <a class="dropdown-item" href="{{ route("logout") }}">
                             <i class="ni ni-user-run"></i>
                             <span>Logout</span>
                         </a>

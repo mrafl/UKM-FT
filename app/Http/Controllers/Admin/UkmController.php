@@ -12,13 +12,15 @@ class UkmController extends Controller
     public function index($slug)
     {
         $type = $slug == "ormawa" ? TAB_ORMAWA : TAB_OPMAWA;
+        $user = Services::user();
         $result = Services::getUkm($type);
         return view("admins.ukm.index", [
             "title" => Str::title($slug),
             "tab" => TAB_UKM,
             "subTab" => $type,
             "data" => $result["data"],
-            "type" => $type
+            "type" => $type,
+            "user" => $user
         ]);
     }
 

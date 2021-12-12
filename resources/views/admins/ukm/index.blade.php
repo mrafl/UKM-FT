@@ -68,7 +68,9 @@
                 confirmButtonText: 'Yes, delete it!',
                 cancelButtonClass: 'btn btn-secondary'
             }).then((result) => {
-                if (result.value) window.location.href = "{{ route('admin.ukm.store') }}/" + id + "/delete"
+                if (result.value) {
+                    window.location.href = "{{ route('admin.ukm.store') }}/" + data.id + "/delete"
+                }
             });
         }
     </script>

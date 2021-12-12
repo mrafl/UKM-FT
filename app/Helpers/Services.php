@@ -28,6 +28,11 @@ class Services
             ->json();
     }
 
+    public static function user()
+    {
+        return self::get("user/profile")['data'];
+    }
+
     public static function login($email, $password)
     {
         return self::post("auth/login", [
@@ -71,5 +76,32 @@ class Services
     public static function deleteUkm($id)
     {
         return self::post("ukms/$id/delete");
+    }
+
+    public static function getAdmins()
+    {
+        return self::get("users");
+    }
+
+    public static function addAdmin($args, $photo)
+    {
+        return self::post("users", $args, [
+            "key" => "photo",
+            "file" => $photo
+        ]);
+    }
+
+    public static function editAdmin($id, $args, $photo=null)
+    {
+        if ($photo != null) return self::post("users/$id/edit", $args, [
+            "key" => "photo",
+            "file" => $photo
+        ]);
+        else return self::post("users/$id/edit", $args);
+    }
+
+    public static function deleteAdmin($id)
+    {
+        return self::post("users/$id/delete");
     }
 }

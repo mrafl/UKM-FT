@@ -27,25 +27,28 @@
                     </tr>
                     </tfoot>
                     <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>
-                            <div class="media align-items-center">
+                    @foreach($data as $item)
+                        <tr>
+                            <td>{{ ++$i }}</td>
+                            <td>
+                                <div class="media align-items-center">
                                     <span class="avatar avatar-sm rounded-circle">
-                                        <img alt="Image placeholder" src="{{ argon("assets/img/theme/team-4.jpg") }}">
+                                        <img alt="Image placeholder" src="{{ attachments($item['photo']) }}">
                                     </span>
-                            </div>
-                        </td>
-                        <td>John Snow</td>
-                        <td>john@gmail.com</td>
-                        <td>
-                            <a href="#">
-                                <button class="btn btn-primary">
-                                    <i class="fas fa-user-edit"></i>
+                                </div>
+                            </td>
+                            <td>{{ $item['name'] }}</td>
+                            <td>{{ $item['email'] }}</td>
+                            <td>
+                                <button class="btn btn-sm btn-warning" onclick="edit('{{ json_encode($item) }}')">
+                                    <i class="fas fa-edit"></i>
                                 </button>
-                            </a>
-                        </td>
-                    </tr>
+                                <button class="btn btn-sm btn-danger" onclick="remove({{ $item['id'] }})">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    @endforeach
                     </tbody>
                 </table>
             </div>

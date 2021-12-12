@@ -37,7 +37,12 @@ Route::prefix("dashboard")->middleware("auth.no")->group(function() {
 
 Route::prefix("dashboard")->middleware("auth.required")->group(function () {
     Route::get("/", [DashboardController::class, "admin"])->name("admin.index");
+    Route::get("/logout", [AuthController::class, "logout"])->name("logout");
+
     Route::get("/admins", [UserController::class, "index"])->name("admin.users");
+    Route::post("/admin", [UserController::class, "store"])->name("admin.users.store");
+    Route::post("/admin/{id}/edit", [UserController::class, "update"])->name("admin.users.update");
+    Route::get("/admin/{id}/delete", [UserController::class, "destroy"])->name("admin.users.destroy");
 
     Route::get("/ukm/{slug}", [AdminUkmController::class, "index"])->name("admin.ukm");
     Route::post("/ukm", [AdminUkmController::class, "store"])->name("admin.ukm.store");

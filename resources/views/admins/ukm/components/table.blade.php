@@ -37,11 +37,12 @@
                             </td>
                             <td>{{ $item['name'] }}</td>
                             <td>
-                                <a href="#">
-                                    <button class="btn btn-sm btn-warning" onclick="edit('{{ json_encode($item) }}')">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
+                                <a href="#" class="btn btn-sm btn-info">
+                                    <i class="fas fa-eye"></i>
                                 </a>
+                                <button class="btn btn-sm btn-warning" onclick="edit('{{ json_encode($item) }}')">
+                                    <i class="fas fa-edit"></i>
+                                </button>
                                 <button class="btn btn-sm btn-danger" onclick="remove({{ $item['id'] }})">
                                     <i class="fas fa-trash"></i>
                                 </button>
