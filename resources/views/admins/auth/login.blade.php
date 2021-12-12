@@ -25,10 +25,10 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <!-- Icons -->
-    <link href="{{ argon("assets/vendor/nucleo/css/nucleo.css") }}" rel="stylesheet" type="text/css">
-    <link href="{{ argon("assets/vendor/@fortawesome/fontawesome-free/css/all.min.css") }}" rel="stylesheet" type="text/css">
+    <link href="{{ template("assets/vendor/nucleo/css/nucleo.css") }}" rel="stylesheet" type="text/css">
+    <link href="{{ template("assets/vendor/@fortawesome/fontawesome-free/css/all.min.css") }}" rel="stylesheet" type="text/css">
     <!-- Argon CSS -->
-    <link href="{{ argon("assets/css/argon.css?v=1.1.0") }}" rel="stylesheet" type="text/css">
+    <link href="{{ template("assets/css/argon.css?v=1.1.0") }}" rel="stylesheet" type="text/css">
 </head>
 
 <body class="bg-default">
@@ -140,15 +140,15 @@
 </footer>
 <!-- Argon Scripts -->
 <!-- Core -->
-<script src="{{ argon("assets/vendor/jquery/dist/jquery.min.js") }}"></script>
-<script src="{{ argon("assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js") }}"></script>
-<script src="{{ argon("assets/vendor/js-cookie/js.cookie.js") }}"></script>
-<script src="{{ argon("assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js") }}"></script>
-<script src="{{ argon("assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js") }}"></script>
+<script src="{{ template("assets/vendor/jquery/dist/jquery.min.js") }}"></script>
+<script src="{{ template("assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js") }}"></script>
+<script src="{{ template("assets/vendor/js-cookie/js.cookie.js") }}"></script>
+<script src="{{ template("assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js") }}"></script>
+<script src="{{ template("assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js") }}"></script>
 <!-- Argon JS -->
-<script src="{{ argon("assets/js/argon.js?v=1.1.0") }}"></script>
+<script src="{{ template("assets/js/argon.js?v=1.1.0") }}"></script>
 <!-- Demo JS - remove this in your project -->
-<script src="{{ argon("assets/js/demo.min.js") }}"></script>
+<script src="{{ template("assets/js/demo.min.js") }}"></script>
 </body>
 
 </html>
