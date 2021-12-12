@@ -24,4 +24,9 @@ class DashboardController extends Controller
             "title" => "Tentang Kami"
         ]);
     }
+
+    public function admin()
+    {
+        return redirect()->route("admin.users");
+    }
 }

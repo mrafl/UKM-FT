@@ -36,4 +36,5 @@ return array(
     'b6b991a57620e2fb6b2f66f03fe9ddc2' => $vendorDir . '/symfony/string/Resources/functions.php',
     'ed962a97bd972bc82007176b647d4e36' => $vendorDir . '/facade/ignition/src/helpers.php',
     'cd6300adadbd4f8fd3c2a0a1b3efa58a' => $baseDir . '/app/Helpers/Functions.php',
+    '826f3da4001aa504d228ba58f15bad49' => $baseDir . '/app/Helpers/Constants.php',
 );

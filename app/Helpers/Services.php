@@ -6,104 +6,70 @@ use Illuminate\Support\Facades\Http;
 
 class Services
 {
-    public static function login($username, $password)
+
+    private static function post($endpoint, $data = [], $file = null)
     {
-        return Services::post("auth/login", [
-            "username" => $username,
+        if ($file != null ) {
+            $filename = uniqid() . "." . $file['file']->clientExtension();
+            return Http::attach($file["key"], $file["file"]->get(), $filename)
+                ->withHeaders(authHeader())
+                ->post(env("BACKEND_URL") . $endpoint, $data)
+                ->json();
+        }
+        return Http::withHeaders(authHeader())
+            ->post(env("BACKEND_URL") . $endpoint, $data)
+            ->json();
+    }
+
+    private static function get($endpoint, $data = [])
+    {
+        return Http::withHeaders(authHeader())
+            ->get(env("BACKEND_URL") . $endpoint, $data)
+            ->json();
+    }
+
+    public static function login($email, $password)
+    {
+        return self::post("auth/login", [
+            "email" => $email,
             "password" => $password
         ]);
     }
 
-    public static function post($endpoint, $data = [])
+    public static function logout()
     {
-        $headers = [
-            "Content-Type" => "Application/json"
-        ];
-        return Http::withHeaders($headers)->post(env("BACKEND_URL") . $endpoint, $data);
+        return self::get("auth/logout", []);
     }
 
-    public static function getGrafikAkreditasiUniversitas()
+    public static function addUser($name, $email, $password, $photo)
     {
-        return Services::get("akreditasi/fakultas");
+        return self::post("auth/register", []);
     }
 
-    public static function get($endpoint, $data = [])
+    public static function getUkm($type)
     {
-        $headers = [
-            "Content-Type" => "Application/Json"
-        ];
-        return Http::withHeaders($headers)->get(env("BACKEND_URL") . $endpoint, $data);
+        return self::get("ukms", ["type" => $type]);
     }
 
-    public static function getAkreditasi($akreditas = null, $fakultas = null, $expiry = null)
+    public static function addUkm($args, $logo)
     {
-        $data = [];
-        if ($akreditas != null) $data["akreditasi"] = $akreditas;
-        if ($fakultas != null) $data["fakultas"] = $fakultas;
-        if ($expiry != null) $data["expiry"] = $expiry;
-
-        return Services::get("akreditasi/prodi", $data);
+        return self::post("ukms", $args, [
+            "key" => "logo",
+            "file" => $logo
+        ]);
     }
 
-    public static function getRekapAkreditasi($akreditas = null, $fakultas = null, $expiry = null)
+    public static function editUkm($id, $args, $logo=null)
     {
-        $data = [];
-        if ($akreditas != null) $data["akreditasi"] = $akreditas;
-        if ($fakultas != null) $data["fakultas"] = $fakultas;
-        if ($expiry != null) $data["expiry"] = $expiry;
-
-        return Services::get("akreditasi/counter", $data);
+        if ($logo != null) return self::post("ukms/$id/edit", $args, [
+            "key" => "logo",
+            "file" => $logo
+        ]);
+        else return self::post("ukms/$id/edit", $args);
     }
 
-    public static function getCounterRekapAkreditasiMasaBerlaku()
+    public static function deleteUkm($id)
     {
-        return Services::get("akreditasi/counter/expiry");
-    }
-
-    public static function getDataProdi($kode)
-    {
-        return Services::get("akreditasi/fakultas/$kode");
-    }
-
-    public static function getCounterMahasiswa()
-    {
-        if (session('role') == 'rektor') {
-            return Services::get("mahasiswa/counter");
-        } else {
-            $kode_fakultas = session('kode_fakultas');
-            return Services::get("mahasiswa/counter", [
-                "kode_fakultas" => $kode_fakultas
-            ]);
-        }
-    }
-
-    public static function getCounterSebaranMahasiswaFakultas()
-    {
-        return Services::get("mahasiswa/sebaran/fakultas");
-    }
-
-    public static function getCounterSebaranMahasiswaProdi($kode_fakultas)
-    {
-        return Services::get("mahasiswa/sebaran/prodi/" . $kode_fakultas);
-    }
-
-    public static function getSDMKualifikasi()
-    {
-        return Services::get("sdm/kualifikasi");
-    }
-
-    public static function getSDMUsia()
-    {
-        return Services::get("sdm/usia");
-    }
-
-    public static function getSDMJabatanFungsional()
-    {
-        return Services::get("sdm/jabatan/fungsional");
-    }
-
-    public static function getSDMGolongan()
-    {
-        return Services::get("sdm/pangkat/golongan");
+        return self::post("ukms/$id/delete");
     }
 }
