@@ -4,23 +4,25 @@
         <div class="card">
             <!-- Card header -->
             <div class="card-header">
-                <h3 class="mb-0">{{ $title }}</h3>
+                <h3 class="mb-0">Anggota ukm {{ $ukm['name'] }}</h3>
             </div>
             <div class="table-responsive py-4">
                 <table class="table table-flush" id="datatable-basic">
                     <thead class="thead-light">
                     <tr>
                         <th>#</th>
-                        <th>logo</th>
+                        <th>photo</th>
                         <th>name</th>
+                        <th>position</th>
                         <th></th>
                     </tr>
                     </thead>
                     <tfoot>
                     <tr>
                         <th>#</th>
-                        <th>logo</th>
+                        <th>photo</th>
                         <th>name</th>
+                        <th>position</th>
                         <th></th>
                     </tr>
                     </tfoot>
@@ -31,15 +33,29 @@
                             <td>
                                 <div class="media align-items-center">
                                     <span class="avatar avatar-sm rounded-circle">
-                                        <img alt="Image placeholder" src="{{ attachments($item['logo']) }}">
+                                        <img alt="Image placeholder" src="{{ attachments($item['photo']) }}">
                                     </span>
                                 </div>
                             </td>
                             <td>{{ $item['name'] }}</td>
+
+                            @if($item["position"] == 1)
+                                <td>Ketua</td>
+                            @elseif($item["position"] == 2)
+                                <td>Wakil Ketua</td>
+                            @elseif($item["position"] == 3)
+                                <td>Bendahara</td>
+                            @elseif($item["position"] == 4)
+                                <td>Wakil Bendahara</td>
+                            @elseif($item["position"] == 5)
+                                <td>Sekretaris</td>
+                            @elseif($item["position"] == 6)
+                                <td>Wakil Sekretaris</td>
+                            @else
+                                <td>Anggota</td>
+                            @endif
+
                             <td>
-                                <a href="{{ route('admin.ukm.member', ['slug' => $item['slug']]) }}" class="btn btn-sm btn-info">
-                                    <i class="fas fa-eye"></i>
-                                </a>
                                 <button class="btn btn-sm btn-warning" onclick="edit('{{ json_encode($item) }}')">
                                     <i class="fas fa-edit"></i>
                                 </button>

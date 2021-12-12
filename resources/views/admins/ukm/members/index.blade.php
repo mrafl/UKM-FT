@@ -3,14 +3,19 @@
 @section("header")
     <div class="row align-items-center py-4">
         <div class="col-lg-6 col-5">
-            <button onclick="add()" class="btn btn-sm btn-neutral">Add Admin</button>
+            <a href="{{ route("admin.ukm", ['slug' => $ukm['type'] == TAB_ORMAWA ? 'ormawa' : 'opmawa']) }}">
+                <button class="btn btn-sm btn-neutral">
+                    <i class="fas fa-chevron-left"></i> Back
+                </button>
+            </a>
+            <button onclick="add()" class="btn btn-sm btn-neutral">Tambah Member</button>
         </div>
     </div>
 @endsection
 
 @section("content")
-    @include("admins.users.components.table")
-    @include("admins.users.components.modal")
+    @include("admins.ukm.members.components.table")
+    @include("admins.ukm.members.components.modal")
 @endsection
 
 @section("script")
@@ -21,14 +26,11 @@
             const title = $("#modal-title");
 
             form.trigger('reset');
-            title.html("Tambah Admin")
-            form.attr("action", "{{ route('admin.users.store') }}")
+            title.html("Tambah Anggota")
+            form.attr("action", "{{ route('admin.ukm.member.store', ["id" => $ukm['id']]) }}")
 
             $("#photo").attr("required", true)
-            $("#password").attr("required", true)
-
             $("label[for=photo]").html('Photo<sup class="text-danger">*</sup>')
-            $("label[for=password]").html('Password<sup class="text-danger">*</sup>')
 
             modal.modal('show');
         }
@@ -41,17 +43,14 @@
             const title = $("#modal-title");
 
             form.trigger('reset');
-            title.html("Edit Admin")
-            form.attr("action", "{{ route('admin.users.store') }}/" + data.id + "/edit")
+            title.html("Edit Anggota")
+            form.attr("action", "{{ route('admin.ukm.store') }}/member/" + data.id + "/edit")
 
             $("#name").val(data.name)
             $("#email").val(data.email)
 
             $("#photo").attr("required", false)
-            $("#password").attr("required", false)
-
             $("label[for=photo]").html('Photo')
-            $("label[for=password]").html('Password')
 
             modal.modal('show');
         }
@@ -67,7 +66,7 @@
                 confirmButtonText: 'Yes, delete it!',
                 cancelButtonClass: 'btn btn-secondary'
             }).then((result) => {
-                if (result.value) window.location.href = "{{ route('admin.users.store') }}/" + id + "/delete"
+                if (result.value) window.location.href = "{{ route('admin.ukm.store') }}/member/" + id + "/delete"
             });
         }
     </script>

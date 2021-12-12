@@ -1,10 +1,11 @@
 <?php
 
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\UkmController as AdminUkmController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UKMController;
-use App\Http\Controllers\Admin\UkmController as AdminUkmController;
+use App\Http\Controllers\Admin\UkmMemberController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,7 +31,7 @@ Route::prefix('ormawa')->group(function () {
     Route::get('/{slug?}', [UKMController::class, 'ormawa'])->name("ormawa")->defaults('slug', 'default');
 });
 
-Route::prefix("dashboard")->middleware("auth.no")->group(function() {
+Route::prefix("dashboard")->middleware("auth.no")->group(function () {
     Route::get("login", [AuthController::class, "login"])->name("login");
     Route::post("login", [AuthController::class, "loginAction"])->name("login.action");
 });
@@ -48,4 +49,9 @@ Route::prefix("dashboard")->middleware("auth.required")->group(function () {
     Route::post("/ukm", [AdminUkmController::class, "store"])->name("admin.ukm.store");
     Route::post("/ukm/{id}/edit", [AdminUkmController::class, "update"])->name("admin.ukm.update");
     Route::get("/ukm/{id}/delete", [AdminUkmController::class, "destroy"])->name("admin.ukm.destroy");
+
+    Route::get("/ukm/{slug}/members", [UkmMemberController::class, "index"])->name("admin.ukm.member");
+    Route::post("/ukm/{id}/member", [UkmMemberController::class, "store"])->name("admin.ukm.member.store");
+    Route::post("/ukm/member/{memberId}/edit", [UkmMemberController::class, "update"])->name("admin.ukm.member.update");
+    Route::get("/ukm/member/{memberId}/delete", [UkmMemberController::class, "destroy"])->name("admin.ukm.member.destroy");
 });

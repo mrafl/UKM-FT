@@ -56,6 +56,16 @@ class Services
         return self::get("ukms", ["type" => $type]);
     }
 
+    public static function ukmDetail($id)
+    {
+        return self::get("ukms/$id");
+    }
+
+    public static function ukmMembers($id)
+    {
+        return self::get("ukm/members", ["ukmId" => $id]);
+    }
+
     public static function addUkm($args, $logo)
     {
         return self::post("ukms", $args, [
@@ -91,6 +101,14 @@ class Services
         ]);
     }
 
+    public static function addUkmMember($args, $photo)
+    {
+        return self::post("ukm/members", $args, [
+            "key" => "photo",
+            "file" => $photo
+        ]);
+    }
+
     public static function editAdmin($id, $args, $photo=null)
     {
         if ($photo != null) return self::post("users/$id/edit", $args, [
@@ -100,8 +118,22 @@ class Services
         else return self::post("users/$id/edit", $args);
     }
 
+    public static function editUkmMember($id, $args, $photo=null)
+    {
+        if ($photo != null) return self::post("ukm/members/$id/edit", $args, [
+            "key" => "photo",
+            "file" => $photo
+        ]);
+        else return self::post("ukm/members/$id/edit", $args);
+    }
+
     public static function deleteAdmin($id)
     {
         return self::post("users/$id/delete");
+    }
+
+    public static function deleteUkmMember($id)
+    {
+        return self::post("ukm/members/$id/delete");
     }
 }
